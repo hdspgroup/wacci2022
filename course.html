@@ -176,24 +176,27 @@
                 <hr class="line" style="width: 10%;">
 
                 <div class="section-text align-center mbr-fonts-style display-7">
-                    <h3 class="align-center pb-3 mbr-fonts-style">Stochastic gradient descent (SGD) and variants from
-                        Scratch: A Python hands-on experience</h3>
-                    <div class="pb-3">Gradient descent (GD) is a well-known first order optimization method, which uses
-                        the gradient of the loss function, along with a step-size (or learning rate), to iteratively
-                        update the solution. When the loss (cost) function is dependent on datasets with large
-                        cardinality, such in cases typically associated with deep learning (DL), GD becomes impractical.
+                    <h3 class="align-center pb-3 mbr-fonts-style">Stochastic gradient descent (SGD) and variants from Scratch: A Python
+hands-on experience</h3>
+                    <div class="pb-3">The stochastic gradient descent (SGD) is a simple yet very influential
+algorithm used to find the minimum of a loss (cost) function which is
+dependent on datasets with large cardinality, such in cases typically
+associated with deep learning (DL). In relation to the well-known GD
+(gradient descent) algorithm, SGD uses a noisy gradient approximation
+(considering only a small fraction of the dataset) instead of the full
+gradient, where the key motivation for such selection is speed.
                     </div>
-                    <div class="pb-3"> In this scenario, stochastic GD (SGD), which uses a noisy gradient approximation
-                        (computed over a random fraction of the dataset), has become crucial. There exits several
-                        variants/improvements over the “vanilla” SGD, such RMSprop, Adagrad, Adadelta, Adam, Nadam,
-                        etc., which are usually given as black-boxes by most of DL’s libraries (TensorFlow, PyTorch,
-                        MXNet, etc.).</div>
-                    <div class="pb-3">The primary objective of this course is to combined the essential theoretical
-                        aspects related to SGD and variants, along with hands on experience to program in Python, from
-                        scratch (i.e. not based on DL’s libraries such as TensorFlow, PyTorch, MXNet) the SGD along with
-                        the RMSprop, Adagrad, Adadelta, Adam and Nadam algorithms and to test their performance using
-                        the MNIST and CIFAR-10 datasets for shallow networks (consisting of up to two ReLU layers and a
-                        Softmax as the last layer).
+                    <div class="pb-3"> There exists several variants/improvements over the “vanilla” SGD,
+such Adagrad, RMSprop, Adadelta, Adam, Nadam, etc.; from a high-level
+perspective, all such variants may be understood as using an adaptive
+element-wise step-size.</div>
+                    <div class="pb-3">The primary objective of this course is to give an overview of the
+essential theoretical aspects related to SGD and variants in order to
+program them in Python, from scratch (i.e. not based on DL's libraries
+such as TensorFlow, PyTorch, MXNet). In order to test such
+implementations, the MNIST and CIFAR-10 datasets will be used along
+with shallow networks (consisting of hidden layers and a Softmax as
+the last layer).
                     </div>
 
                     <div class="container-fluid">
