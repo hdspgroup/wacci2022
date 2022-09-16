@@ -1,5 +1,4 @@
-RewriteEngine On
-
-RewriteCond %{HTTPS} off
-
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+ RewriteEngine on
+ RewriteCond %{HTTPS} off
+ RewriteCond %{HTTP_HOST} ^wacci2022.uis.edu.co$
+ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
